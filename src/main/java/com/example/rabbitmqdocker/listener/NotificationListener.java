@@ -9,7 +9,7 @@ public class NotificationListener {
 
     @RabbitListener(queues = "first-queue")
     public void handleMessage(Notification notification){
-        System.out.println("Mesaj alindi");
+        System.out.println("Message received");
         System.out.println(notification.toString());
     }
 
